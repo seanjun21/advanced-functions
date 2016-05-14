@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nonsense</title>
+</head>
+<body>
+	<script type="text/javascript">
+// Now, instead of calling blab inside of nonsense, return blab (without invoking it). 
+// Call nonsense with some string and store the returned value (the blab function) in a variable called blabLater. 
+// Call nonsense again with a different string and store the returned value in a variable called blabAgainLater.
+
+		var nonsense = function (string) {
+			var blab = function(){
+				alert(string);
+			};
+			return blab;
+		};
+
+		var blabLater = nonsense("hello!");
+
+		var blabAgainLater = nonsense("hello again!"); 
+
+//Inspect blabLater and blabAgainLater in your console. Call them (they are functions!) and see what happens!
+
+	</script>
+</body>
+</html>
+

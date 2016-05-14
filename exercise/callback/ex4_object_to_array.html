@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object to Array</title>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//Write a function that pushes all the values in an object to an array.
+
+		var input = {two: 2, four: 4, three: 3, twelve: 12}
+		//output: [2, 4, 3, 12]
+
+		var pusher = function (obj) {
+			return _.values(obj);	
+		}
+
+		console.log(pusher(input));
+	</script>
+</body>
+</html>
+
+

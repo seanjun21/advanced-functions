@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Each</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var array1 = [1,2,3,4,5,6]
+		var object1 = {
+			1: 'one',
+			2: 'two',
+			3: 'three',
+			4: 'four',
+			5: 'five'
+		}
+
+		_.each(array1, function(element, index, list) {
+			console.log(element);
+		})
+
+		_.each(object1, function(value, key, list) {
+			console.log(value);
+		})
+
+	</script>
+</body>
+</html>

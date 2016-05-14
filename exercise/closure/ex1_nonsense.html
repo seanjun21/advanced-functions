@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nonsense</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Write a function, nonsense that takes an input string. 
+		// This function contains another function, blab which alerts
+		// string and is immediately called inside the function nonsense. 
+		// blab should look like this inside of the nonsensefunction:
+
+		// var blab = function(){
+		// alert(string);
+		// };
+
+		var nonsense = function (string) {
+			var blab = function(){
+				alert(string);
+			};
+			blab();
+		};
+
+		nonsense('hello!');
+	</script>
+</body>
+</html>
+

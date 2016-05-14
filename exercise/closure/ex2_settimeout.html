@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nonsense</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//In your function, nonsense, change the immediate call to a setTimeout 
+		//so that the call to blab comes after 2 seconds. 
+		//The blab function itself should stay the same as before.
+
+		var nonsense = function (string) {
+			var blab = function(){
+				alert(string);
+			};
+			setTimeout(blab, 2000);
+		};
+
+		nonsense('hello!');
+	</script>
+</body>
+</html>
+

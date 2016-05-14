@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Refactor</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//Write a function that takes an array and a function as arguments and calls that function on every value in the array, and replaces the original value with the return value of the callback function:
+
+		// var doubler = function(value){return value * 2};
+		// input: [1,2,3,4,5], doubler
+		// output: [2,4,6,8,10]
+
+		var arrayFunct = function (array, funct) {
+			// create empty output which result can be inserted
+			var output = [];
+			// iterate over array
+			_.each(array, function(element, index, list) {
+				//runs function using each element and push to output
+				output[index] = funct(array[index]);
+			});
+			return output;
+		};
+
+		var input = [1, 2, 3, 4, 5];
+		var doubler = function (n) {
+			return n * 2;
+		};
+
+		console.log(arrayFunct(input, doubler));
+		console.log(input);
+
+	</script>
+</body>
+</html>
